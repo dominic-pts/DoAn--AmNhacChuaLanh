@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_requests",
+  "info": {
+    "singularName": "form-request",
+    "pluralName": "form-requests",
+    "displayName": "formRequest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "unique": false,
+      "required": false
+    },
+    "tickets": {
+      "type": "integer",
+      "unique": false,
+      "required": false,
+      "default": 0
+    },
+    "seats": {
+      "type": "text",
+      "required": true,
+      "unique": false
+    },
+    "agree": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "private": true
+    },
+    "totalPayment": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}
